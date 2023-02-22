@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/844fd7bfe8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<form method="get">
+<div>
+    <div class="row">
+{% for i,j,k,l,m in listcombining %}
+    <div class="col-4">
+ <div class="card" style="width:15rem;height:25rem;">
+ <img src="{% static i %}" style="height:200px;width:235px;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{j}}</h5>
+    <p class="card-text">{{k}}</p>
+      <p>{{l}}</p>
+    <a href="http://127.0.0.1:8000/Myntraapp/edit/{{m}}" type="submit" class="btn btn-primary">edit</a>
+      <a href="http://127.0.0.1:8000/Myntraapp/delete/{{m}}" type="submit" class="btn btn-danger">delete</a>
+  </div>
+</div>
+    </div>
+{% endfor %}
+</div>
+</div>
+</form>
+</body>
+</html>
+
+<!--       <div style="background-color:rgb(238, 207, 224); height:1000px;width:980px;" class="column"><div class="row row-cols-1 row-cols-md-5 g-4">-->
+<!--      <div class="col">-->
+<!--        <div class="card">-->
+<!--          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">-->
+<!--            <div class="carousel-inner">-->
+<!--              <div class="carousel-item active">-->
+<!--                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/1/CP/TI/CR/4103856/product-jpeg-1000x1000.jpg" class="d-block w-100" alt="...">-->
+<!--              </div>-->
+<!--              <div class="carousel-item">-->
+<!--                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/1/UL/AZ/BP/4103856/product-jpeg-1000x1000.jpg" class="d-block w-100" alt="...">-->
+<!--              </div>-->
+<!--              <div class="carousel-item">-->
+<!--                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/1/IC/ET/GX/4103856/product-jpeg-1000x1000.jpg" class="d-block w-100" alt="...">-->
+<!--              </div>-->

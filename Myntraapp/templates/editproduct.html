@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <th>
+        <tr><th><th> <label >Name</label></th>
+            <input style="margin-left:55px;" type="text" name="productname" value="{{a.productname}}"><br></td></tr>
+        <tr> <th><th> <label>Price</label></th>
+      <input style="margin-left:60px;" type="number" name="productprice" value="{{a.productprice}}"><br></td></tr>
+  <tr> <td> <label>Description</label>
+      <input style="margin-left:20px;" type="text" name="productdesc" value="{{a.productdescription}}"><br></td></tr>
+    <tr><td><label>Image</label><br>
+    <img src="{% static im %}" height="200px" width="250px">
+        <input style="margin-left:20px;" type="file" name="productfile"><br></td></tr>
+        <tr><th><td> <button type="submit">update</button></td></tr></th>
+
+</table>
+</form>
+
+</body>
+</html>

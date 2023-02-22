@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/844fd7bfe8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<form method="get">
+<div>
+    <div class="row">
+{% for i,j,k,l,m in listcombining %}
+    <div class="col-4">
+ <div class="card" style="width:15rem;height:25rem;">
+ <img src="{% static i %}" style="height:200px;width:235px;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{j}}</h5>
+    <p class="card-text">{{k}}</p>
+      <p>{{l}}</p>
+    <a style="font-size:13px;" href="http://127.0.0.1:8000/Myntraapp/bagdisplay/{{m}}" type="submit" class="btn btn-primary">Proceed <i class="fa-solid fa-bag-shopping"></i></a>
+       <a style="font-size:13px;" href="http://127.0.0.1:8000/Myntraapp/bagdisplay/{{m}}" type="submit" class="btn btn-danger">Remove </a>
+
+  </div>
+</div>
+    </div>
+{% endfor %}
+</div>
+</div>
+</form>
+</body>
+</html>

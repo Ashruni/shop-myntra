@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+
+        #a{
+
+            margin-left: 1100px;
+        }
+        #d{
+            padding:15px;
+            background-color:rgb(102, 0, 34);
+            margin-top:-10px;
+<!--            rgb(102, 0, 34);-->
+<!--            rgb(224, 179, 193)-->
+        }
+
+#o{
+height:450px;
+width:320px;
+background-color:rgb(249, 238, 243);
+margin-top:0px;
+float:left;
+margin-left:40px;
+color:black;
+border-radius:10px;
+
+<!--rgb(255, 51, 133)-->
+
+}
+#l{
+height:450px;
+width:320px;
+background-color:rgb(249, 238, 243);
+margin-top:40px;
+margin-left:480px;
+color:black;
+border-radius:10px;
+}
+#m{
+border-radius:10px;
+height:451px;
+width:322px;
+background-color:rgb(249, 238, 243);
+float:right;
+margin-top:-450px;
+margin-right:-220px;
+color:black;
+text-align:justify;
+}
+        #offcanvasLeft{
+            color: rgb(230, 0, 115);
+            background-color:rgb(242, 230, 255);
+            border:1px;
+            width:350px;
+
+        }
+
+        #body{
+
+
+            background-image:url('download.jpg');
+            background-repeat:no-repeat;
+            background-size:100% 800px;
+            background-attachment:fixed;
+
+
+        }
+        #e{
+        color:white;
+        margin-left:220px;
+        height:200px;
+        width:250px;
+        margin-top:50px;
+        border:2px;
+
+        background-color:white;
+        }
+        #f{
+        color:violet;
+        margin-left:500px;
+        margin-top:-200px;
+        height:200px;
+        width:250px;
+        background-color:white;
+        border:2px;
+        }
+        #g{
+          color:violet;
+          height:200px;
+          width:250px;
+          margin-left:780px;
+          margin-top:-200px;
+          background-color:white;
+          border:2px;
+          border-color:black;
+           }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/844fd7bfe8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-color:rgb(242, 230, 255);height:700px;width:1275px;">
+<nav class="navbar navbar-expand-sm bg-light">
+<form method="post" enctype="multipart/form-data"> {% csrf_token %}
+    <!-- <i class="fa-thin fa-bars"></i> -->
+    <ul class="container-fluid"  id="d" >
+
+        <div class="row">
+
+            <div class="col "><button  class="btn btn-danger" type="button"  id="a" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"><i class="fa-sharp fa-solid fa-bars"></i></button>
+<!--       <div class="collapse navbar-collapse"  id="navbarSupportedContent">-->
+
+            <ul style="margin-left:1170px;margin-top:-40px;" class="navbar-nav ">
+                <li class="nav-item dropdown">
+                <a style="color:rgb(215, 20, 98)" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i style="color:white;" class="fa-regular fa-bell fa-xl"></i>
+                </a>
+
+
+                  <table style="background-color:rgb(222, 238, 241);margin-left:-250px;width:250px;"  class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <tr>
+
+                        <th style="color:rgb(69, 1, 28); font-display:inherit;text-align:center;" ><a style="text-decoration:none;" href="http://127.0.0.1:8000/Myntraapp/shopnot/">Notification</a> </th><br>
+
+
+                    </table>
+            </div>
+
+                </div>
+
+    </ul>
+    </div>
+    <div>
+        <img style="height:400px;width:1265px;margin-top:-18px;" src="https://media1.thehungryjpeg.com/thumbs2/ori_3845718_h6zfqi3vu8c0skigva727q3d1n7wfm8reag5flz5_women-in-clothing-store-people-shoppers-choosing-fashion-clothes-in-b.jpg">
+    </div><br><br>
+    <h1 style="color:rgb(255, 26, 117);font-style:italic;margin-left:500px;margin-top:20px;">Welcome {{shopname}},</h1>
+     <div style="margin-bottom:-30px;">
+
+          <div  id="e"><img style="margin-top:45px;margin-left:70px;height:100px;width:110px;" src="{% static 'Myntraapp/images/upload.jpg' %}"><br><br><button style="margin-left:73px;border-radius:10px; background-color:rgb(179, 224, 255);border:0px;color:red;" ><a style="text-decoration:none;color:black;" href="http://127.0.0.1:8000/Myntraapp/productupload/">Upload Items</button ></a></div>
+           <div id="f"><img style="margin-top:10px;margin-left:40px;height:150px;width:160px" src="{% static 'Myntraapp/images/view.png' %}"><br><button style=" margin-left:65px;margin-top:10px;border-radius:10px; background-color:rgb(179, 224, 255);border:0px;color:red;"><a style="text-decoration:none;color:black;" href="http://127.0.0.1:8000/Myntraapp/imagedisplay">View my post</button></a></div>
+              <div id="g"><img style="margin-top:10px;margin-left:33px;height:150px;width:190px" src="{% static 'Myntraapp/images/othershop.png' %}"><button style=" margin-left:65px;margin-top:10px; background-color:rgb(179, 224, 255);border:0px;color:black;border-radius:10px;"><a style="text-decoration:none;color:black;"  href="http://127.0.0.1:8000/Myntraapp/showotherproducts/">View all Products</button></a></div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+      <div class="offcanvas-header">
+        <h2 id="offcanvasLeftLabel">{{shopname}}</h2>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+
+
+        <a style="text-decoration: none;" href=""><h5>Home</h5></a><br>
+        <a style="text-decoration: none;"  href="file.html\csss\bootstrap\caroisal.html"><h5 >Analytics</h5></a><br>
+<a style="text-decoration: none;" href="http://127.0.0.1:8000/Myntraapp/shopnot/"><h5>Notification</h5></a><br>
+
+              <a style="text-decoration: none;" href="..."><h5>Logout</h5></a><br><br>
+
+                <!-- <h5>More</h5> -->
+      </div>
+    </div>
+    <div style="height:200px; width:1000px;margin-top:140px;" >
+        <div id="o"><p style="text-align:justify;" >Myntra has become the go-to platform for growing a business through online selling.
+            It is continuously increasing the number of sellers on its platform. Let’s see how!
+        Physical businesses are progressively modifying their traditional marketing approaches and embracing online strategies. This is in response to rapid improvements in the internet marketplace. Due to its massive customer base, businesses want
+            to know how to sell on Myntra to benefit from reasons that make the eCommerce platform a huge success.
+        Myntra provides excellent possibilities for business advancement through online selling and marketing. However, this isn’t the only reason Myntra is India’s most popular online store.
+
+</p></div>
+        <div id="l" ><p style="text-align:justify;">You also don’t have to set up a payment gateway. Myntra will process payments through its payments partner.
+Through Myntra’s Partner Insights, you can get real-time data insights and tools for strategic selling.
+Myntra provides great customer service, including quick and easy returns, exchanges, and refunds. You too can provide an enhanced customer experience when you sell via Myntra.
+You don’t have to worry about shipping and delivery, saving a ton of logistics costs.
+
+sole proprietorship firms
+limited liability partnerships
+Keep the scanned copies of the documents ready with you to speed up the steps of registration.
+
+
+
+
+Go to Myntra’s partner info page.
+Click on the ‘Register Now’ button on the menu bar.</p></div>
+        <div id="m" ><p  >Myntra has a massive customer base of over 40 million users, servicing more than 17000 pin codes, and your brand can get exposure to the same.
+You will have full control over your merchandise – handling orders, cataloging, product quality, etc.
+Myntra supports its sellers with fulfillment models, cataloging, and supply chain management.
+You do not have to dedicate the time, effort, and resources to set up and run an online storefront. Leverage Myntra’s user-friendly interface to market and sell your products more effectively.
+You also don’t have to set up a payment gateway. Myntra will process payments through its payments partner.
+Through Myntra’s Partner Insights, you can get real-time data insights and tools.
+
+
+</p></div>
+    </div>
+       <div  style="background-color:rgb(16, 0, 95);width:1270px;height:70px; margin-top:270px;" class="container-fluid"><h3 style="color:rgb(202, 188, 77);margin-left:480px;padding-top:15px;">Get connected with us</h3></div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Online Shopping</th>
+                        <th scope="col">Customer Policies</th>
+                        <th scope="col">Useful links</th>
+                        <th scope="col">Popular searches</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">men</a></th>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Contact us</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Blogs</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Clothing</a></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row"><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">women</a></th>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">FAQ</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Carriers</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Hair care</a></td>
+                      </tr>
+                      <th scope="row"><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Kids</a></th>
+                      <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">T&C</a></td>
+                      <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Sites & maps</a></td>
+                      <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">body care</a></td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+
+
+</div>
+
+</form>
+</nav>
+</body>
+</html>

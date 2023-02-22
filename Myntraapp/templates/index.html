@@ -1,0 +1,640 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+        height:400px;
+        width:800px;
+        text-align:center;
+        margin-bottom: 25px;
+        }
+        #a{
+          margin-top:50px;
+
+        }
+
+        #c{
+          margin-left:150px ;
+          margin-top:20px;
+
+        }
+        #z:hover{
+          height:300px;
+          width:310px;
+          margin-left:-6px ;
+          align-content: center;
+        }
+        #i:hover{
+          height:300px;
+          width:310px;
+          margin-left:-6px ;
+          align-content: center;
+
+        }
+        #m{
+          margin-top:-150px;
+        }
+        #h{
+          color:rgb(140, 145, 242);
+          margin-left:20px;
+          margin-top: -20px;
+        }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/844fd7bfe8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height:4000px;width:-30px;background-color:rgb(249, 225, 233);text-align:justify;">
+
+     <nav  class="navbar navbar-expand {-sm|-md|-lg|-xl|-xxl} " >
+        <div style="background-color:rgb(221, 240, 241);margin-top:-10px; padding:5px; width:1300px;" class="container-fluid"><a href="http://127.0.0.1:8000/Myntraapp/index/"><img style="height:50px; width:50px; "src="{% static 'Myntraapp/images/logo.jpg' %}"></a>
+          <a  class="navbar-brand" href="http://127.0.0.1:8000/Myntraapp/index/"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+
+              <li class="nav-item dropdown">
+                <a style="color:rgb(215, 20, 98)" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MEN
+                </a>
+
+
+                  <table style="background-color:rgb(222, 238, 241);"  class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <tr>
+
+                      <th style="color:rgb(69, 1, 28); font-display:inherit; " >Clothing </th><br>
+                      <th style="color:rgb(69, 1, 28);  " >Accessories</th></tr>
+                      <tr>
+                        <td><a  class="dropdown-item" href="">Tshirts</a></td>
+                        <td><a  class="dropdown-item" href="">Shirts</a></td>
+                      </tr>
+                      <tr>
+                        <td><a  class="dropdown-item" href="">Jeans</a></td>
+                        <td><a  class="dropdown-item" href="">Shoes</a></td>
+                      </tr>
+                      <tr>
+                        <td><a  class="dropdown-item" href="">Chains</a></td>
+                        <td><a  class="dropdown-item" href="">Shorts</a></td>
+                      </tr>
+                      <tr>
+                        <td><a  class="dropdown-item" href="">Tshirts</a></td>
+                        <td><a  class="dropdown-item" href="">Tshirts</a></td>
+                      </tr>
+
+
+                    </table>
+              <li class="nav-item dropdown">
+                <a style="color:rgb(215, 20, 98);" class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  WOMEN
+                </a>
+                <table style="background-color:rgb(222, 238, 241);" class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <tr>
+
+                    <th style="color:rgb(45, 0, 18); " >Clothing </th><br>
+                    <th style="color:rgb(23, 0, 9); " >Accessories </th></tr>
+                    <tr>
+                      <td><a  class="dropdown-item" href="">Kurtha sets</a></td>
+                      <td><a  class="dropdown-item" href="">Tops</a></td>
+                    </tr>
+                    <tr>
+                      <td><a  class="dropdown-item" href="">Bottom</a></td>
+                      <td><a  class="dropdown-item" href="">Jeans</a></td>
+                    </tr>
+                    <tr>
+                      <td><a  class="dropdown-item" href="">Denims</a></td>
+                      <td><a  class="dropdown-item" href="">Footwear</a></td>
+                    </tr>
+                    <tr>
+                      <td><a  class="dropdown-item" href="">Ornaments</a></td>
+                      <td><a  class="dropdown-item" href="">Tshirts</a></td>
+                    </tr>
+
+
+                  </table>
+
+              <li class="nav-item dropdown">
+                <a style="color:rgb(215, 20, 98);" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  KIDS
+                </a>
+                <table style="background-color:rgb(222, 238, 241);"   class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <tr>
+
+                  <th style="color:rgb(57, 3, 24); " >Clothing  </th><br>
+                  <th style="color:rgb(58, 2, 24); " >Accessories</th></tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Girls Tops</a></td>
+                    <td><a  class="dropdown-item" href="">Hair</a></td>
+                  </tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Boys</a></td>
+                    <td><a  class="dropdown-item" href="">Toys</a></td>
+                  </tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Pants</a></td>
+                    <td><a  class="dropdown-item" href="">Bath </a></td>
+                  </tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Shoes</a></td>
+                    <td><a  class="dropdown-item" href="">Socks</a></td>
+                  </tr>
+
+
+                </table>
+
+
+
+
+
+            <li class="nav-item dropdown">
+              <a style="color:rgb(215, 20, 98)" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOME & LIVING
+              </a>
+              <table style="background-color:rgb(222, 238, 241);"   class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <tr>
+
+                  <th style="color:rgb(168, 64,106); " >Clothing  </th><br>
+                  <th style="color:rgb(168, 64, 106); " > Accessories </th></tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href=""> kitchen</a></td>
+                    <td><a  class="dropdown-item" href="">living room</a></td>
+                  </tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Bath</a></td>
+                    <td><a  class="dropdown-item" href="">Bedsheets</a></td>
+                  </tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Utensils</a></td>
+                    <td><a  class="dropdown-item" href="">Pots</a></td>
+                  </tr>
+                  <tr>
+                    <td><a  class="dropdown-item" href="">Garden</a></td>
+                    <td><a  class="dropdown-item" href="">Ceramics</a></td>
+                  </tr>
+
+
+                </table>
+                <li class="nav-item " style="margin-top:8px;">
+                  <a style="color:rgb(215, 20, 98) ;text-decoration:none; margin-left:10px;"  href="http://127.0.0.1:8000/Myntraapp/aboutus/"  >
+                    About
+                  </a>
+               <li class="nav-item " style="margin-top:8px;">
+                  <a style="color:rgb(215, 20, 98) ;text-decoration:none; margin-left:10px;"  href="http://127.0.0.1:8000/Myntraapp/contactus/"  >
+                    contact
+                  </a>
+
+
+
+
+          <li class="nav-item dropdown">
+            <a style="color:rgb(215, 20, 98); margin-left:400px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i  class="fa-regular fa-user"></i>
+            </a>
+            <table style="margin-left:310px;margin-top:-20px;border:2px;table-border:5px;background-color:rgb(234, 226, 236);width:220px;height:80px; " class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <tr>
+
+                <th style="color:rgb(242, 11, 103);  text-align:center; " > CUSTOMER</th><br>
+                <th style="color:rgb(242, 11, 103);  text-align:center;" > SHOP </th>
+              <th style="color:rgb(242, 11, 103);  text-align:center;margin-left:2px;" > ADMIN </th></tr>
+
+
+                <tr>
+                  <td><a  style="text-decoration:none;color:black;margin-left:3px;" href="http://127.0.0.1:8000/Myntraapp/inpage/">Click here </a></td>
+                  <td><a  style="text-decoration:none;color:black" href= "http://127.0.0.1:8000/Myntraapp/inpage2/">Click here </a></td>
+                  <td><a  style="text-decoration:none;color:black;margin-left:7px;" href= "http://127.0.0.1:8000/admin/"> Login</a></td>
+
+
+
+                  </tr>
+
+                <tr> </li></table>
+                  <li class="nav-item dropdown">
+                    <a style="color:rgb(205, 17, 92); " class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-heart"></i>
+
+                    </a>
+                    <table  class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                        <tr>
+                          <td><a  style="text-decoration:none; color:rgb(32, 2, 14);" href=""> Saved items </a></td>
+                          <td><a  style="text-decoration:none;  color:rgb(32, 2, 14);" href="">Move to cart</a></td>
+                        </tr>
+
+                        <tr> </li></table>
+                          <li class="nav-item dropdown">
+                            <a style="color:rgb(205, 17, 92); " class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bag-shopping"></i>
+
+                            </a>
+                            <table  class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                                <tr>
+                                  <td><a  style="text-decoration:none; color:rgb(32, 2, 14);" href=""> Saved items </a></td>
+                                  <td><a  style="text-decoration:none;  color:rgb(32, 2, 14);" href="">Move to cart</a></td>
+                                </tr>
+
+                                <tr>
+
+                                </li>
+                              </table>
+                </ul>
+              </li>
+
+          <form class="d-flex">
+
+            <input  style="color:rgb(215, 20, 98);  margin-bottom:20px; margin-right:200px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" ><a href=""><i style="color:rgb(240, 42, 151); margin-top:10px;" class="fa-solid fa-magnifying-glass"></i></a>
+
+
+            </form>
+          </div>
+        </div>
+
+      </nav>
+      <div style="background-color:rgb(247, 215, 220);margin-top:-8px;height:400px;" id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div style="height:430px; width:700px; margin-left:300px; " class="carousel-item active">
+            <img src="{% static 'Myntraapp/images/kyra.jpeg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div style="height:430px; width:500px; margin-left:400px;  " class="carousel-item">
+              <img src="{% static 'Myntraapp/images/hrithick.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div style="height:430px; width:500px; margin-left:390px;  " class="carousel-item">
+              <img src="{% static 'Myntraapp/images/Myntra-launches.jpg' %}" class="d-block w-100" alt="...">
+<!--              https://businessconnectindia.in//wp-content/uploads/2022/05/Myntra-launches.jpg-->
+            </div>
+            </div>
+            </div>
+
+
+            <div style="background-color:rgb(238, 225, 250); height:420px;text-align:center" class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div id="a" class="card h-50">
+                  <img id="z"  src="{% static 'Myntraapp/images/20%offindex.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="http://127.0.0.1:8000/Myntraapp/" style="text-decoration:none;color:black;text-align:center;">20% off for Women clothing </a></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div id="a" class="card h-50">
+                  <img id="z" src=" {% static 'Myntraapp/images/shoestyes.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Get upto 50% off</a></h5>
+                    <p class="card-text">.</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div id="a" class="card h-50">
+                  <img id="z" src="{% static 'Myntraapp/images/kid.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Explore kids world</a></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div id="a" class="card h-50 w-80">
+                  <img id="z"src="{% static 'Myntraapp/images/kitchen.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="" style="text-decoration:none;color:black;text-align:center;">Shop for home  Get 20%off</a></h5>
+                    <p class="card-text">.</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div  style="background-color:rgb(162, 162, 241) ;width:6000px;height:60px; margin-top:-170px;" class="container-fluid"><h3 style="color:rgb(255, 255, 255);margin-top:10px;text-align:center;">DEAL ON TOP BRANDS</h4> </div>
+
+              <div style="background-color:rgb(151, 244, 161) ;margin-left:350px;height:482px;width:600px;margin-top:-110px; " id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div  class="carousel-item active">
+                    <a href='' style="text-decoration:none; text-align:center;"><h4 STYLE="font-style: italic;color:rgb(223, 0, 0)">Dresses From<H4 STYLE="font-style: italic;color:rgb(121, 1, 1)"> ETC 40% off<H4>  </h4></a>
+                    <img id="c" src="{% static 'Myntraapp/images/dressesindex1.jpg' %}" class="d-block w-50 h-50" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <a href='' style="text-decoration:none; text-align:center;"><h4 STYLE="font-style: italic;color:rgb(223, 0, 0)">20% off on<H4 STYLE="font-style:oblique;color:rgb(17, 14, 179)"> harpa <H4>  </h4></a>
+                    <img id="c" src="{% static 'Myntraapp/images/bluedress.jpg' %}" class="d-block w-50 h-50" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <a href='' style="text-decoration:none; text-align:center;"><h4 STYLE="font-style: italic;color:rgb(223, 0, 0)">50% off on<H4 STYLE="font-style:normal;color:rgb(4, 64, 18)">D&D <H4>  </h4></a>
+                    <img id="c" src="{% static 'Myntraapp/images/pinkdress.jpg' %}" class="d-block w-50 h-50" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <a href='' style="text-decoration:none; text-align:center;"><h4 STYLE="font-style: italic;color:rgb(223, 0, 0)">30% off on<H4 STYLE="font-style: italic;color:black"> leem<H4>  </h4></a>
+                    <img id="c" src="{% static 'Myntraapp/images/reddress.jpg' %}" class="d-block w-50 h-50" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <a href='' style="text-decoration:none; text-align:center;"><h4 STYLE="font-style: italic;color:rgb(223, 0, 0)">starting from ₹300<H4 STYLE="font-style:oblique ;color:rgb(74, 6, 142)">LEPPA<H4>  </h4></a>
+                    <img id="c" src="{% static 'Myntraapp/images/navybluedress.jpg' %}" class="d-block w-50 h-50" alt="...">
+                  </div>
+
+                </div>
+                <div  style="background-color:rgb(8, 10, 18) ;width:1264px;height:60px; margin-left:-350px;" class="container-fluid"><h4 style="color:rgb(202, 188, 77);margin-top:10px;text-align:center;">GET EXCITING VOUCHERS OVER ₹4500 PURCHASES </h4> </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div >
+            <div style="margin-top:600px; background-color:rgb(203, 237, 225);" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div  class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div  class="carousel-inner">
+                <div  class="carousel-item active">
+                  <img style=" height:600px; " src="{% static 'Myntraapp/images/myntra-sale-cover.png' %}" class="d-block w-100" alt="...">
+                  <h3 style="color:rgb(0, 84, 158);text-align:center; font-style:italic;margin-bottom:40px;">TRADITIONAL WEAR</h3>
+                </div>
+
+                <div class="carousel-item">
+                  <img style=" " src="{% static 'Myntraapp/images/gym.jpg' %}" class="d-block w-100" alt="...">
+                  <h3 style=" margin-bottom:30px;color:rgb(4, 16, 27);text-align:center; font-style:italic;">GYM WEAR</h3>
+                    </div>
+                <div class="carousel-item">
+                  <img  style=" height:600px;" src="{% static 'Myntraapp/images/kyyyra.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div></div>
+
+            <div style="background-color:rgb(238, 225, 250); height:420px;" class="row row-cols-1 row-cols-md-4 g-4">
+              <div style="" class="col">
+                <div id="a" class="card h-50">
+                  <img id="z"  src="{% static 'Myntraapp/images/topbrand.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Top makeup brands</a></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div id="a" class="card h-50 ">
+                  <img id="z" src="{% static 'Myntraapp/images/thb.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Hand bags</a></h5>
+                    <p class="card-text">.</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div id="a" class="card h-50">
+                  <img id="z" src="{% static 'Myntraapp/images/makeup-stock-3.png' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Beauty & Grooming</a></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col">
+                <div id="a" class="card h-50 ">
+                  <img id="z"src="{% static 'Myntraapp/images/thbath.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="" style="text-decoration:none;color:black;text-align:center;">Bath & Body Care</a></h5>
+                    <p class="card-text">.</p>
+                  </div>
+                  <!-- <div class="card-footer">
+                    <small class="text-muted"></small>
+                  </div> -->
+                </div>
+              </div>
+
+              <div style="background-color:rgb(238, 225, 250); height:420px;width:3900px;margin-top:-220px;text-align:center;" class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div id="a" class="card h-50 ">
+                    <img id="z"  src="{% static 'Myntraapp/images/images (1).jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Phone & Accessories</a></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50 ">
+                    <img id="z" src="{% static 'Myntraapp/images/headphone.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Headphones</a></h5>
+                      <p class="card-text">.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50">
+                    <img id="z" src="{% static 'Myntraapp/images/cart.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Luggages & Trollies</a></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50 w-80">
+                    <img id="z"src="{% static 'Myntraapp/images/mobilecase.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" style="text-decoration:none;color:black;text-align:center;">Mobile cases</a></h5>
+                      <p class="card-text">.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+
+
+              <div  style="background-color:rgb(6, 13, 11) ;width:6000px;height:60px; margin-top:-170px;margin-left:14px;" class="container-fluid"><h3 style="color:rgb(202, 188, 77);margin-top:10px;text-align:center;">DEAL ON TOP BRANDS</h4> </div>
+
+
+
+                <div class="col">
+                  <div  id="a" class="card h-50 ">
+                    <img id="m"  src="{% static 'Myntraapp/images/shoesblack.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">From ₹1000 </a></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50 ">
+                    <img id="m" src="{% static 'Myntraapp/images/brownshoes.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">From ₹600 onwards</a></h5>
+                      <p class="card-text">.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50">
+                    <img id="m" src="{% static 'Myntraapp/images/clean.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">₹500-₹1000</a></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50 w-80">
+                    <img id="m"src="{% static 'Myntraapp/images/brownnshoes.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" style="text-decoration:none;color:black;text-align:center;">₹700-₹1000</a></h5>
+                      <p class="card-text">.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div style=""  class="col">
+                  <div id="a" class="card h-50 ">
+                    <img id="m"  src="{% static 'Myntraapp/images/bag.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Hand Bags</a></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50 ">
+                    <img id="m" src="{% static 'Myntraapp/images/watch.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Watches</a></h5>
+                      <p class="card-text">.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="a" class="card h-50">
+                    <img id="m" src="{% static 'Myntraapp/images/jeans.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href=".." style="text-decoration:none;color:black;text-align:center;">Jeans</a></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div  id="a" class="card h-50 w-80">
+                    <img id="m"src="{% static 'Myntraapp/images/shorts.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" style="text-decoration:none;color:black;text-align:center;">Shorts</a></h5>
+                      <p class="card-text">.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                      <small class="text-muted"></small>
+                    </div> -->
+                  </div>
+                </div>
+                <div  style="background-color:rgb(16, 0, 95) ;width:7000px;height:70px; margin-top:-70px;margin-left:10px" class="container-fluid"><h3 style="color:rgb(202, 188, 77);text-align:center;">Get connected with us</h4> <i id="h" style="margin-left:-40px;"class="fa-brands fa-facebook"></i><i id="h" class="fa-brands fa-instagram"></i><i id="h" class="fa-brands fa-twitter"></i></div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Online Shopping</th>
+                        <th scope="col">Customer Policies</th>
+                        <th scope="col">Useful links</th>
+                        <th scope="col">Popular searches</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">men</a></th>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:8000/Myntraapp/contactus/">Contact us</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Blogs</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Clothing</a></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row"><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">women</a></th>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">FAQ</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Carriers</a></td>
+                        <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Hair care</a></td>
+                      </tr>
+                      <th scope="row"><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Kids</a></th>
+                      <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">T&C</a></td>
+                      <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">Sites & maps</a></td>
+                      <td><a style="text-decoration:dotted;color:rgb(226, 80, 22)" href="http://127.0.0.1:5500/file.html/csss/bootstrap/trial_pro/tr.html">body care</a></td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+
+
+</div>
+
+</body>
+</html>
